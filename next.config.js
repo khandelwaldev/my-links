@@ -3,7 +3,7 @@ module.exports = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'slyro.vercel.app',
+          hostname: 'github.com',
           port: '',
           pathname: '/**',
         },

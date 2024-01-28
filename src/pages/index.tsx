@@ -6,18 +6,20 @@ import Background from "@/components/Background";
 export default function Home() {
   return (
     <>
-      <div className="mx-auto mb-10 mt-16 flex flex-col items-center gap-4">
+    {/** Hero */}
+      <div className="mx-auto mb-6 mt-16 flex flex-col items-center gap-4">
         <Image
-          src="https://slyro.vercel.app/_next/image?url=https%3A%2F%2Fgithub.com%2Fkhandelwaldev.png&w=256&q=75"
-          width={75}
-          height={75}
+          src="https://github.com/khandelwaldev.png"
+          width={200}
+          height={200}
           alt="Logo"
           className="rounded-full"
           priority
         />
-        <h1 className="text-xl font-semibold">Dev</h1>
-        <p className="text-sm text-gray-400">Solo developer kinda student</p>
+        <h1 className="text-[20px] font-semibold">Dev Khandelwal</h1>
+        <p className="text-base text-gray-400">Solo developer kinda student</p>
       </div>
+      {/** Links */}
       <div className="flex flex-col gap-4 py-3">
         {socialLinks.map((link) => (
           <Link
