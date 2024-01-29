@@ -2,11 +2,13 @@ import { socialLinks } from "@/data/socialLinks";
 import Link from "next/link";
 import Image from "next/image";
 import Background from "@/components/Background";
+import Spotify from "@/components/icons/Spotify";
+import NowPlaying from "@/components/NowPlaying";
 
 export default function Home() {
   return (
     <>
-    {/** Hero */}
+      {/** Hero */}
       <div className="mx-auto mb-6 mt-16 flex flex-col items-center gap-4">
         <Image
           src="https://github.com/khandelwaldev.png"
@@ -36,6 +38,9 @@ export default function Home() {
             <div>{link.label}</div>
           </Link>
         ))}
+        <div>
+          <NowPlaying />
+        </div>
       </div>
       <Background />
       <footer className="my-8 flex justify-center">
