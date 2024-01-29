@@ -43,8 +43,7 @@ const Header: FC = () => {
   const showNavbar = scrollY > 100;
 
   // menu items 
-  const pageUrl = `https://d3v.pages.dev/links`
-  const message = `Check out this Linkstree! -`
+  const pageUrl = `https://slyro-links.vercel.app/`
 
   const menuItems = [
     { label: 'Share on Facebook', icon: <Facebook />, href: `https://www.facebook.com/sharer.php?u=${pageUrl}` },
@@ -59,7 +58,7 @@ const Header: FC = () => {
   // copy link on click
   const handleCopyClick = async () => {
     try {
-      const textToCopy = 'https://d3v.pages.dev/links';
+      const textToCopy = 'https://slyro-links.vercel.app/';
       await navigator.clipboard.writeText(textToCopy);
       setCopied(true);
     } catch (err) {
@@ -121,7 +120,7 @@ const Header: FC = () => {
               <button onClick={handleCopyClick} className='w-full h-[50px] flex items-center justify-between border border-[#353535] rounded-lg mt-6 px-4 hover:bg-[#0000003b]'>
                 <div className='flex items-center gap-4'>
                   <Image src={`https://github.com/khandelwaldev.png`} width={30} height={30} alt='Dev' className='rounded-full' />
-                  <h1 className='text-lg font-medium text-[#000]'>d3v.pages.dev/links</h1>
+                  <h1 className='text-lg font-medium text-[#000]'>slyro-links.vercel.app/</h1>
                 </div>
                 <button className='text-lg text-[#000] font-medium'>
                   {copied ? <span className='text-[#ff4000]'>Copied!</span> : 'Copy'}
