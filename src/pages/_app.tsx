@@ -18,7 +18,7 @@ export default function DevFolio({ Component, pageProps }: AppProps) {
           description: "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
           images: [
             {
-              url: "https://www.simpleimageresizer.com/_uploads/photos/727d9904/image_2023-12-11_141515879_529x768.png",
+              url: "https://slyro-links.vercel.app/og.png",
               width: 529,
               height: 768,
               alt: "Links",
