@@ -61,12 +61,12 @@ const NowPlaying: React.FC = () => {
         <div className="bg-[#121212] w-full h-[60px] border-[2px] border-[#1ed760] rounded-xl px-2">
           <div className="w-full h-full flex gap-5 items-center">
             <div>
-              <i className="w-[40px]"><Spotify /></i>
+              <img src="https://img.icons8.com/?size=46&id=G9XXzb9XaEKX&format=png" alt="Spotify" />
             </div>
             <div>
               <p className="line-clamp-1">Not Listening</p>
               <p className="text-white opacity-[50%] text-base line-clamp-1">
-                Spotify-
+                Currently, I'm offline
               </p>
             </div>
           </div>
