@@ -34,7 +34,7 @@ export default function Home() {
               borderColor: link.color,
             }}
           >
-            <div className="absolute left-8">{link.icon}</div>
+            <div className="absolute left-8" style={{color: link.color}}>{link.icon}</div>
             <div>{link.label}</div>
           </Link>
         ))}

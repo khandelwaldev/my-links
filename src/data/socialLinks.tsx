@@ -9,8 +9,15 @@ import {
   SiYoutube,
 } from "react-icons/si";
 import { FiBook } from "react-icons/fi";
+import { ImInfo } from "react-icons/im";
 
 export const socialLinks = [
+  {
+    label: "About Me",
+    icon: <ImInfo />,
+    href: "https://slyro.vercel.app/about",
+    color: "#fff",
+  },
   {
     label: "Blog",
     icon: <FiBook />,
