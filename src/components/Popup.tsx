@@ -31,7 +31,7 @@ const Popup: React.FC<PopupProps> = ({ onClose, isPopupVisible }) => {
                     <i className='w-[84px]'><Project /></i>
                     <div>
                         <h1 className='text-base font-medium'>Try my new project <span className='text-[#09c478]'>InnerBeat</span></h1>
-                        <p className='text-[14px] text-white/70 line-clamp-2'>InnerBeat let you stream your favroute music online for free without any add</p>
+                        <p className='text-[14px] text-white/70 line-clamp-2'>InnerBeat let you stream your favroute music online for free without any ads</p>
                     </div>
                 </div>
                 <Link href={`https://innerbeat.vercel.app`} target='_blank'>
