@@ -2,12 +2,20 @@ import { socialLinks } from "@/data/socialLinks";
 import Link from "next/link";
 import Image from "next/image";
 import Background from "@/components/Background";
-import Spotify from "@/components/icons/Spotify";
+import { useState } from "react";
 import NowPlaying from "@/components/NowPlaying";
+import Popup from "@/components/Popup";
 
 export default function Home() {
+  const [isPopupVisible, setIsPopupVisible] = useState(true);
+
+  const closePopup = () => {
+    // Close the popup by updating the state
+    setIsPopupVisible(false);
+  };
   return (
     <>
+      <Popup onClose={closePopup} isPopupVisible={isPopupVisible} />
       {/** Hero */}
       <div className="mx-auto mb-6 mt-16 flex flex-col items-center gap-4">
         <Image
@@ -34,7 +42,7 @@ export default function Home() {
               borderColor: link.color,
             }}
           >
-            <div className="absolute left-8" style={{color: link.color}}>{link.icon}</div>
+            <div className="absolute left-8" style={{ color: link.color }}>{link.icon}</div>
             <div>{link.label}</div>
           </Link>
         ))}
