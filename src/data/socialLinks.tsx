@@ -10,6 +10,7 @@ import {
 } from "react-icons/si";
 import { FiBook } from "react-icons/fi";
 import { ImInfo } from "react-icons/im";
+import Project from "../components/icons/Project";
 
 export const socialLinks = [
   {
@@ -17,6 +18,12 @@ export const socialLinks = [
     icon: <ImInfo />,
     href: "https://slyro.vercel.app/about",
     color: "#fff",
+  },
+  {
+    label: "New Project InnerBeat",
+    icon: <Project />,
+    href: "https://innerbeat.vercel.app/",
+    color: "#09c478",
   },
   {
     label: "Blog",
