@@ -19,12 +19,12 @@ export const socialLinks = [
     href: "https://slyro.vercel.app/about",
     color: "#fff",
   },
-  {
-    label: "New Project InnerBeat",
-    icon: <Project />,
-    href: "https://innerbeat.vercel.app/",
-    color: "#09c478",
-  },
+ // {
+ //   label: "New Project InnerBeat",
+ //   icon: <Project />,
+ //   href: "https://innerbeat.vercel.app/",
+ //   color: "#09c478",
+ // },
   {
     label: "Blog",
     icon: <FiBook />,
