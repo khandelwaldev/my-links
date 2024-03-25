@@ -7,15 +7,15 @@ import NowPlaying from "@/components/NowPlaying";
 import Popup from "@/components/Popup";
 
 export default function Home() {
-  const [isPopupVisible, setIsPopupVisible] = useState(true);
+  // const [isPopupVisible, setIsPopupVisible] = useState(true);
 
-  const closePopup = () => {
+  // const closePopup = () => {
     // Close the popup by updating the state
-    setIsPopupVisible(false);
-  };
+  //  setIsPopupVisible(false);
+ // };
   return (
     <>
-      <Popup onClose={closePopup} isPopupVisible={isPopupVisible} />
+      {/* <Popup onClose={closePopup} isPopupVisible={isPopupVisible} /> */}
       {/** Hero */}
       <div className="mx-auto mb-6 mt-16 flex flex-col items-center gap-4">
         <Image
